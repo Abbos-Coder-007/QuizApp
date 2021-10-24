@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">This Quiz test app</div>
+    <div class="quiz">
+        <div class="quiz__score">
+            <span class="quiz__true">1</span> / 
+            <span class="quiz__count">10</span>
+        </div>
+        <div class="quiz__question"></div>
+        <div class="quiz__list"></div>
+        <button class="quiz__check" onclick="check()">Check</button>
+    </div>
+    <div class="results" style="display:none">
+        Your score is <span id="res"></span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

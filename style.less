@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    padding: 20px;
+    font-size: 35px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #a8a3a3;
+}
+.quiz {
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    &__score{
+        text-align: right;
+    }
+    &__true {
+        color: rgb(44, 172, 93);
+    }
+    &__count {
+        font-weight: bold;
+    }
+    &__question {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    input {
+        display: none;
+        &:checked{
+            &+label {
+                color: rgb(11, 119, 53);
+                &:before {
+                    background-color: rgb(16, 116, 54);
+                    background-image: url(correct-symbol.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 10px;
+                
+
+                }
+            }
+        }
+    }
+    &__input {
+        margin-bottom: 20px;
+        label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-radius: 5px;
+                border:1px solid #e7e7e7;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__check {
+        background-color: rgb(44, 172, 93);
+        border:0;
+        width: 150px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.res{
+    padding: 15px;
+    font-size: 24px;
+    background-color: #fff;
+    display: block;
+}
